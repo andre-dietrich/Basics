@@ -9,6 +9,10 @@ language: de
 
 comment:  Dies ist ein kleiner LiaScript-Kurs über LiaScript.
 
+narrator: Deutsch Male
+
+import: https://raw.githubusercontent.com/liaTemplates/rextester/master/README.md
+
 -->
 
 # LiaScript Basiskurs
@@ -94,127 +98,132 @@ Sonstiges:
 
 ## Publizieren
 
+https://www.github.com/andre-dietrich/Basics
 
 
-
-
+https://liascript.github.io/course/?https://www.github.com/andre-dietrich/Basics
 
 
 
 ## Quizze
 
+Was ist 3+3?
+
+[[6]]
+[[?]] Es ist kleiner als 7.
+[[?]] Es ist größer __als 5__.
+**************************
+
+Add a solution explanation __Markdown__!
+
+$$
+   \sum_{i=1}^\infty\frac{1}{n^2}
+        =\frac{\pi^2}{6}
+$$
+
+****************************************
+
+Was ist 3+6?
+
+[[$ f(a,b,c) = (a^2+b^2+c^2)^3 $|
+5|9.9e|(![Eines Baumes](pics/baum.jpg)<!-- style="height: 40px" -->)]]
+
+
+[( )] 4
+[(X)] 5
+[( )] 6
+[[?]] Es ist kleiner als 7.
+[[?]] Es ist größer __als 5__.
+**************************
+
+Add a solution explanation __Markdown__!
+
+$$
+   \sum_{i=1}^\infty\frac{1}{n^2}
+        =\frac{\pi^2}{6}
+$$
+
+****************************************
+
+
+
+[[ ]] Add as many elements as you want?
+[[X]] The X marks the correct answer!
+[[ ]] ... this is wrong ...
+[[X]] ... this has to be selected too ...
+
+
+
+[[option 1] [option 2] [hhh]]
+[[X] [ ] [X]]  add a line
+[( ) (X) ( ) ( )]  add a line
+
+
+
+## Mathematik
+
+eine Formel $ f(a,b,c) = (a^2+b^2+c^2)^3 $ im Text
+
+$$
+   \frac{\overgroup{AB}}{222}
+$$
+
+
+
 ## HTML & Stylen
 
-## Animationen
+<h1> _Überschrift_ </h1>
 
-## Text2Speech
+<dl>
+   <dt style="color: red">$12 +10 + 2017$</dt>
+   <dd>Eröffnung des neuen Palmengartens</dd>
+   <dt>20.10.2017</dt>
+   <dd>Führung durch den Orchideengarten</dd>
+</dl>
+
+
+
+Dies ist ein Text der hervorgehoben<!-- style="color: green" --> werden soll!
+
+
+## Animationen Text2Speech
+
+
+    --{{1}}--
+Zuerst kommt eine _Tabelle_.
+
+    {{1}}
+| Header 1   | Header 2   | Header 3   |
+| :--------- | :--------- | :--------- |
+| Item 1     | {2}{_Item 2_}| Item 3     |
+
+    --{{2 Russian Female}}--
+Критская война (греч. Κρητικός Πόλεμος, тур. Girit Savaşi) или Кандийская война
+(итал. Guerra di Candia, сербохорв. Kandijski rat) — война в 1645—1669 годах
+между Османской империей и Венецианской республикой за остров Крит, на тот
+момент крупнейшее и самое богатое заморское владение Венеции.
+
+    {{2}}
+``````````````````````````````````````````````````
+                             .--->  F
+    A       B     C   D     /
+    *-------*-----*---*----*----->  E
+``````````````````````````````````````````````````
 
 ## Programmierumgebung
 
-## ASCII-Art
-
-## Macros
-
-You can use common [Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) syntax to create your course, such as:
-
-1. Lists
-2. ordered or
-
-   * unordered
-   * ones ...
 
 
-| Header 1   | Header 2   |
-| :--------- | :--------- |
-| Item 1     | Item 2     |
+```cpp
+#include <iostream>
 
+int main()
+{
+    std::cout << "Hello, asdADSworld!\n";
+}
+```
+@Rextester.CPP
 
-Images:
-
-![images](https://farm2.static.flickr.com/1618/26701766821_7bea494826.jpg)
-
-
-### Extensions
-
-     --{{0}}--
-But you can also include other features such as spoken text.
-
-      --{{1}}--
-Insert any kind of audio file:
-
-       {{1}}
-?[audio](https://bigsoundbank.com/UPLOAD/mp3/1068.mp3)
-
-
-     --{{2}}--
-Even videos or change the language completely.
-
-       {{2-3}}
-!?[video](https://www.youtube.com/watch?v=bICfKRyKTwE)
-
-
-      --{{3 Russian Female}}--
-Первоначально создан в 2004 году Джоном Грубером (англ. John Gruber) и Аароном
-Шварцем. Многие идеи языка были позаимствованы из существующих соглашений по
-разметке текста в электронных письмах...
-
-
-    {{3}}
-Type "voice" to see a list of all available languages.
-
-
-### Styling
-
-<!-- class = "animated rollIn" style = "animation-delay: 2s; color: purple" -->
-The whole text-block should appear in purple color and with a wobbling effect.
-Which is a **bad** example, please use it with caution ...
-~~ only this is red ;-) ~~ <!-- class = "animated infinite bounce" style = "color: red;" -->
-
-## Charts
-
-Use ASCII-Art to draw diagrams:
-
-                                    Multiline
-    1.9 |    DOTS
-        |                 ***
-      y |               *     *
-      - | r r r r r r r*r r r r*r r r r r r r
-      a |             *         *
-      x |            *           *
-      i | B B B B B * B B B B B B * B B B B B
-      s |         *                 *
-        | *  * *                       * *  *
-     -1 +------------------------------------
-        0              x-axis               1
-
-## Quizzes
-
-### A Textquiz
-
-What did the **fish** say when he hit a **concrete wall**?
-
-    [[dam]]
-
-### Multiple Choice
-
-Just add as many points as you wish:
-
-    [[X]] Only the **X** marks the correct point.
-    [[ ]] Empty ones are wrong.
-    [[X]] ...
-
-### Single Choice
-
-Just add as many points as you wish:
-
-    [( )] ...
-    [(X)] <-- Only the **X** is allowed.
-    [( )] ...
-
-## Executable Code
-
-
-You can make your code executable and define projects:
 
 ``` js     -EvalScript.js
 let who = data.first_name + " " + data.last_name;
@@ -239,8 +248,63 @@ else {
   eval(`@input(0)`);
 </script>
 
-## More
 
-Find out what you can even do more with quizzes:
+## ASCII-Art
 
-https://liascript.github.io/course/?https://raw.githubusercontent.com/liaScript/docs/master/README.md
+
+``````````````````
+
+
+
+
+       ___     ___      .---+---+---+---+---.     .---+---+---+---.  .---.   .---.
+   ___/   \___/   \     |   |   |   |   |   |    / \ / \ / \ / \ /   |   +---+   |
+  /   \___/   \___/     +---+---+---+---+---+   +---+---+---+---+    +---+   +---+
+  \___/   \___/   \     |   |   |   |   |   |    \ / \ / \ / \ / \   |   +---+   |
+  /   \___/   \___/     +---+---+---+---+---+     +---+---+---+---+  +---+   +---+
+  \___/   \___/   \     |   |   |   |   |   |    / \ / \ / \ / \ /   |   +---+   |
+      \___/   \___/     '---+---+---+---+---'   '---+---+---+---'    '---'   '---'
+
+
+
+
+ +-----------------+      /
+ | LiaScript rocks |_____/
+ +-----------------+
+
+``````````````````
+
+
+3.9 |
+    |                 ***               (* Sternchen)
+  y |               *     *             (r kleine rote Punkte)
+  - | r r r r r r r*r r r r*r r r r r r r
+  a | r  r R         *         *
+  x |            *           *
+  i | B B B B B * B B B B B B * B B B B B
+  s |         *                 *
+    | *  * *                       * *  *
+ -100 +------------------------------------
+    0              x-axis               1
+
+
+
+## Macros
+<!--
+@hallo
+| Header   | Header 2   | Header 3   |
+| :--------- | :--------- | :--------- |
+| Item @0     | Item 2     | Item 3     |
+
+$ f(a,b,c) = (a^2+b^2+c^2)^3 $
+
+@1
+
+@end
+-->
+
+@hallo(Mutti,```(Fee
+
+  ,die Sonne)
+
+```)
